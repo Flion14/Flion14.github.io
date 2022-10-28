@@ -1,4 +1,4 @@
-<script>
+
 const ctx = document.getElementById('canva-1').getContext('2d');    
 
 const centroX = 600;
@@ -210,7 +210,7 @@ ctx.save();
             ctx.fill(lua);
  
     ctx.restore();
-</script>
+
      
    
   
