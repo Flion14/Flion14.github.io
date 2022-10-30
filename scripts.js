@@ -228,3 +228,86 @@ ctx.save();
 }
 
 init();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const canvas = document.getElementById('can1');
+const ctx = canvas.getContext('2d');
+
+function draw(){
+    
+    
+   
+  ctx.beginPath();
+ 
+    ctx.moveTo(180,160);
+    ctx.lineTo(200,120);
+    ctx.lineTo(150,120);
+    ctx.lineTo(125,70);//ponta alta
+    ctx.lineTo(100,120);
+    ctx.lineTo(50,120);
+    ctx.lineTo(70,160);
+    ctx.lineTo(50,200);
+    ctx.lineTo(100,200);
+    ctx.lineTo(125,250);//ponta baixa
+    ctx.lineTo(150,200);
+    ctx.lineTo(200,200);
+    ctx.lineTo(180,160);
+    
+  ctx.fillStyle='orange';
+    ctx.fill();
+  ctx.strokeStyle='black';
+    ctx.stroke();
+   
+} 
+function drawEye(){
+  ctx.beginPath();
+  ctx.moveTo(100, 145);
+ctx.arc(100, 145, 10, 0, 1*Math.PI, true);
+    ctx.moveTo(150, 145);
+
+
+    ctx.arc(150, 145, 10, 0, 1*Math.PI, true);
+    ctx.moveTo(125, 185);
+    
+    ctx.arc(125, 185, 10, 0, 2*Math.PI, false);
+    
+    
+    ctx.fillStyle='black';
+    ctx.fill();
+    ctx.strokeStyle='black';
+    ctx.stroke();
+}
+function drawPink(){
+  ctx.beginPath();
+ctx.arc(85, 165, 10, 0, 2*Math.PI, true);
+    ctx.moveTo(165, 165);
+
+
+    ctx.arc(165, 165, 10, 0, 2*Math.PI, true);
+    
+    
+    
+    ctx.fillStyle='rgb(255, 204, 204)';
+    ctx.fill();
+    
+}
+draw();
+drawEye();
+drawPink();
