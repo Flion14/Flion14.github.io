@@ -45,54 +45,89 @@
   </div>
 </nav>
     </div>
-    <form>
-        <h1>MINECRAFT</h1>
+    <div id="title">
+    <h1>MINECRAFT</h1>
+    </div>
+    <form id='for1'>
+        
 
+        <div class="me">
         <label for="name">Nome Completo:</label>
-        <input type="text" name="name" id="name" required>
-
+        <input type="text" name="name" id="name" required pattern="[A-Za-z]{1,32}">
+      
+        
         <label for="mail">E-mail completo:</label>
-        <input type="email" name="mail" id="mail" required>
-
+        <input type="email" name="mail" id="mail" required placeholder="[...]@gmail.com">
+        
+ 
+        
         <label for="senha">Senha:</label>
         <input type="password" name="senha" id="senha" required>
-
+       
+        
         <label for="senha1">Coloca a Senha de Novo:</label>
-        <input type="password" name="senha1" id="senha1">
-
+        <input type="password" name="senha1" id="senha1" required>
+       
+        
         <h3>Gosta de Minecraft?</h3>
+        <div id="gods">
         <label for="gos">Sim</label>
         <input type="radio" name="gos" id="sim">
         <label for="gos">Não</label>
         <input type="radio" name="gos" id="nao">
         <label for="gos">Outro</label>
         <input type="radio" name="gos" id="ou">
-
-        <label for="mor">Dia do SEU Nascimento:</label>
-        <input type="date" name="mor" id="mor">
+        </div>
+        
+        <label for="mor">Data do SEU Nascimento:</label>
+        <input type="date" name="mor" id="mor" required>
         <label for="idade">Quantia de Anos que o Mundo Sofre Com Sua Presença:</label>
-        <input type="text" name="idade" id="idade">
+        <input type="text" name="idade" id="idade" disabled>
+       
+        <label for="ing">Data de Ingreço no Jogo:</label>
+        <input type="date" name="ing" id="ing" required>
+        <label for="an">Anos de Jogo:</label>
+        <input type="text" name="an" id="an" disabled>
+        </div>
+        <div class="me">
 
-
+        
+        <label for="cpf">Insira seu CPF:</label>
+        <input type="number" name="cpf" id="cpf" required placeholder="***.***.***-**" minlength="13" maxlength="13" pattern="[0-9]">
+        <div>
         <label for="cor">Cor de Concreto Favorita:</label>
         <input type="color" name="cor" id="cor">
-
+        </div>
+        
         <h3>Mob(s) Favorito(s):</h3>
-        <label for="mob">Zumbi</label>
-        <input type="checkbox" name="mob" id="mob1">
-        <label for="mob">Esqueleto</label>
-        <input type="checkbox" name="mob" id="mob2">
-        <label for="mob">Enderman</label>
-        <input type="checkbox" name="mob" id="mob3">
-        <label for="mob">Creeper</label>
-        <input type="checkbox" name="mob" id="mob4">
-        <label for="mob">Aranha</label>
-        <input type="checkbox" name="mob" id="mob5">
-        <label for="mob">Piglin</label>
-        <input type="checkbox" name="mob" id="mob6">
-        <label for="mob">Hoglin</label>
-        <input type="checkbox" name="mob" id="mob7">
+        <div class="op">
+        <label for="mob">Zumbi ></label>
+        <input type="checkbox" name="mob" class="mob">
+        <label for="mob">Esqueleto ></label>
+        <input type="checkbox" name="mob" class="mob">
+        <label for="mob">Enderman ></label>
+        <input type="checkbox" name="mob" class="mob">
+        <label for="mob">Creeper ></label>
+        <input type="checkbox" name="mob" class="mob">
+        <label for="mob">Aranha ></label>
+        <input type="checkbox" name="mob" class="mob">
+        <label for="mob">Piglin ></label>
+        <input type="checkbox" name="mob" class="mob">
+        <label for="mob">Hoglin ></label>
+        <input type="checkbox" name="mob" class="mob">
+        <label for="mob">Wither ></label>
+        <input type="checkbox" name="mob" class="mob">
+        </div>
 
+        <label for="gn">Nick de Jogo:</label>
+        <input type="text" name="gn" id="gn" required>
+
+        <label for="accept">Aceito Vender a Alma para o Lord Herobrine</label>
+        <input type="checkbox" name="accept" id="accept" required>
+        <input type="submit" name="submit" id="submit">
+
+        <p id="obs">*Caixas Com Bordas Vermelhas São Obrigatórias*</p>
+    </div>
     </form>
 </body>
 </html>
