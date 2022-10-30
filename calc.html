@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href='styles.css'/>
+
+</head>
+<body>
+    <div class="tabs">
+
+        <button id="btn-0" class="tab">Calculadora de Área e Perimetro de um Trapézio</button>
+        <button id="btn-1" class="tab">Conversor C para R</button>
+        <button id="btn-2" class="tab">Conversor de TiB</button>
+
+    </div>
+
+    <div class="content">
+
+        <div class="wrapper" id="wrapper-0">
+        
+            <h1>Calculadora de Área e Perimetro de um Trapézio</h1>
+            <label>Base Cima:</label><input type="number" id="entrada-BC"/>
+            <label>Base Baixa:</label><input type="number" id="entrada-BB"/>
+            <label>Altura:</label><input type="number" id="entrada-alt"/>
+             <label>Lado:</label><input type="number" id="entrada-lad"/>
+            <label>Área:</label><input type="number" id="result-A" disabled/>
+            <label>Perimetro:</label><input type="number" id="result-P" disabled/>
+ 
+
+
+
+
+    </div>
+    <div class="wrapper" id="wrapper-1">
+        <h1>Conversor °C para °Re</h1>
+        <label>Temperatura °C:</label><input type="number" id="entrada-ctore"/>
+        <label>Resultado:</label><input type="text" id="result-ctore" disabled/>
+
+
+
+
+
+    </div>
+    <div class="wrapper" id="wrapper-2">
+
+        <h1>Conversor de Tib</h1>
+        <label>Valor TiB:</label><input type="number" id="entrada-tib"/>
+
+        <label>Terabyte:</label><input type="text" id="result-tb" disabled/>
+
+        <label>Gigabyte:</label><input type="text" id="result-gb" disabled/>
+
+        <label>Megabyte:</label><input type="text" id="result-mb" disabled/>
+
+        <label>Kilobyte:</label><input type="text" id="result-kb" disabled/>
+
+        <label>Byte:</label><input type="text" id="result-b" disabled/>
+
+
+        <div id="result-wrapper"></div>
+
+
+    </div>
+
+    </div>
+   
+
+
+
+
+
+</body> 
+</html>
