@@ -1,5 +1,5 @@
 let item = 0 //contador de imagens;
-const max = 20 //número da última imagem+1;
+const max = 6 //número da última imagem+1;
 
 function proxImagem( img ){
 	fetch("img/"+img+".jpg")
