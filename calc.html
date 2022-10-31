@@ -52,26 +52,28 @@
     <div id="corpo">
    
 
-    <div class="tabs">
+    <header><div class="tabs">
 
         <button id="btn-0" class="tab">Calculadora de Área e Perimetro de um Trapézio</button>
         <button id="btn-1" class="tab">Conversor C para R</button>
         <button id="btn-2" class="tab">Conversor de TiB</button>
 
     </div>
-
+    </header>
     <div class="content">
-     
+        
         <div class="wrapper" id="wrapper-0">
         
             <h1>Calculadora de Área e Perimetro de um Trapézio</h1>
-            <label>Base Cima:</label><input type="number" id="entrada-BC"/>
-            <label>Base Baixa:</label><input type="number" id="entrada-BB"/>
+            <label>Base Menor:</label><input type="number" id="entrada-BC"/>
+            <label>Base Maior:</label><input type="number" id="entrada-BB"/>
             <label>Altura:</label><input type="number" id="entrada-alt"/>
-             <label>Lado:</label><input type="number" id="entrada-lad"/>
+             <label>Lado A:</label><input type="number" id="entrada-lad"/>
+             <label>Lado B:</label><input type="number" id="entrada-lad1"/>
             <label>Área:</label><input type="number" id="result-A" disabled/>
             <label>Perimetro:</label><input type="number" id="result-P" disabled/>
- 
+            
+                
 
 
 
@@ -79,16 +81,15 @@
     </div>
     <div class="wrapper" id="wrapper-1">
         <h1>Conversor °C para °Re</h1>
-        <label>Temperatura °C:</label><input type="number" id="entrada-ctore"/>
-        <label>Resultado:</label><input type="text" id="result-ctore" disabled/>
+        <label>Temperatura em °C:</label><input type="number" id="entrada-ctore"/>
+        <label>Temperatura em °Re:</label><input type="text" id="result-ctore" disabled/>
 
-
+        
 
 
 
     </div>
     <div class="wrapper" id="wrapper-2">
-
         <h1>Conversor de Tib</h1>
         <label>Valor TiB:</label><input type="number" id="entrada-tib"/>
 
@@ -102,18 +103,28 @@
 
         <label>Byte:</label><input type="text" id="result-b" disabled/>
 
-
+        
         <div id="result-wrapper"></div>
 
 
     </div>
 
     </div>
-   
+   <footer>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="CSS válido!" />
+            </a>
+        </p>
+
+   </footer>
 
 
 
-    </div>
+
 
 </body> 
 </html>
+
