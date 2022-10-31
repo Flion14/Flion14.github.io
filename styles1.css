@@ -1,4 +1,4 @@
-body{
+#corpo{
 	display: flex;
 	background: rgb(7,92,8);
 	background: linear-gradient(180deg, rgba(7,92,8,1) 0%, rgba(88,51,8,1) 25%);
