@@ -3,7 +3,7 @@ body{
 }
 #placeholder {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
   height: 100vw;
   transform: scale(0.5)
