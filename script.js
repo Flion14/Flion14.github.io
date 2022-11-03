@@ -14,37 +14,16 @@ function proxImagem( img ){
 }
 
 
-/** Alternativa desnecessariamente complexa usando base64:
-https://stackoverflow.com/questions/18650168/convert-blob-to-base64
-function proxImagem( img ){
-			let reader = new FileReader();
-			reader.readAsDataURL(blob); 
-			reader.onloadend = function() {
-				let base64data = reader.result;                
-				console.log(base64data);
-				let proxImg = document.createElement("img");
-				proxImg.src = base64data;
-				document.getElementById("placeholder").appendChild(proxImg);
-			}
-		})
-}*/
+
 
 /** Atualização temporizada: */
 window.onload = setInterval(function(){ 
 	proxImagem( item++ %max );
-    let scrollPoint = window.scrollY + window.innerHeight;
-	window.scrollTo({ top: scrollPoint, behavior: 'smooth' })
+    let scrollPoint = window.scrollX + window.innerWidth;
+	window.scrollTo({ left: scrollPoint, behavior: 'smooth' })
 }, 2000);
 
-/** Atualização via scroll: 
-window.onscroll = function(){ //https://stackoverflow.com/a/46718465
-    let altura = document.body.scrollHeight; 
-    let scrollPoint = window.scrollY + window.innerHeight;
-    //let scrollPoint = window.scrollY; //início da página
-    if(scrollPoint >= altura){
-		proxImagem( item++ %max );
-    }
-}*/
+
 
 window.onload = function(){
 	for(item = 0; item <5; item++){
